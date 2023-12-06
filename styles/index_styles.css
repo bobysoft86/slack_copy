@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  top: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header {
+  background-color: #541554;
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.header a {
+  color: white;
+}
+.header-logo {
+  width: 400px;
+}
+.header-logo a {
+  font-size: 40px;
+}
+.header-logo img {
+  width: 40px;
+}
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.main-video {
+  width: 500px;
+}/*# sourceMappingURL=index_styles.css.map */
