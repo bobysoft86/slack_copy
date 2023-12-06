@@ -1,8 +1,16 @@
+.footer {
+    position: relative;
+}
+
 .footer-block1 {
+  width: 80vw;
   display: flex;
-  justify-content: center;
-  border-bottom: 3px solid #EBEAEB;
-  border-width: auto;
+  align-items: flex-start;
+  padding-bottom:40px;
+  padding-top:56px;
+  position: absolute;
+  left: 10%;
+  flex-wrap: nowrap;
 }
 
 /*LISTA FOOTER*/
@@ -29,3 +37,23 @@
 }
 
 /*PIE FOOTER*/
+
+.pie-footer {
+    display: flex;
+ 
+    left: 23%;
+}
+
+.footer-legal{
+    padding-bottom: 40px;
+   
+}
+
+.privacy-icon {
+    width: 20px;
+    
+}
+
+.cambiar-region {
+    width: 20px;
+}
