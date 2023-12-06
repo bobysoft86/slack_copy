@@ -9,9 +9,11 @@
   background-color: #541554;
   color: white;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: stretch;
 }
 .header a {
   color: white;
@@ -31,6 +33,17 @@
   justify-content: center;
   align-content: center;
   flex-wrap: nowrap;
+}
+.header-nav > ul > li ul {
+  display: none;
+  position: relative;
+}
+.header-nav > ul > li:hover ul {
+  display: flex;
+  position: absolute;
+  background-color: rgb(167, 40, 40);
+  top: 300px;
+  flex-direction: row;
 }
 
 .main-video {
