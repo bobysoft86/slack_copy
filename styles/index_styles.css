@@ -101,6 +101,14 @@
   width: 20px;
 }
 
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: row;
+}
+
 * {
   margin: 0px;
   top: 0px;

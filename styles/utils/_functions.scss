@@ -1,0 +1,6 @@
+@mixin pruebaBoton($bg) {
+    color:white;
+    text-decoration:none;
+    width: 100px;
+    background: $bg;
+    }
