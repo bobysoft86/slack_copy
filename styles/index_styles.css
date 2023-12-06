@@ -35,4 +35,31 @@
 
 .main-video {
   width: 500px;
-}/*# sourceMappingURL=index_styles.css.map */
+}
+
+.footer-block1 {
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid #EBEAEB;
+  border-width: auto;
+}
+
+/*LISTA FOOTER*/
+.logo-footer {
+  width: 60px;
+  height: 60px;
+  margin-right: 120px;
+}
+
+.list-footer {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.list-footer ul li {
+  margin-bottom: 20px;
+}
+
+/*PIE FOOTER*//*# sourceMappingURL=index_styles.css.map */
