@@ -1,16 +1,18 @@
 .footer {
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .footer-block1 {
-  width: 80vw;
+  width: 88vw;
   display: flex;
   align-items: flex-start;
-  padding-bottom:40px;
-  padding-top:56px;
-  position: absolute;
-  left: 10%;
-  flex-wrap: nowrap;
+  padding-bottom: 40px;
+  padding-top: 56px;
+
+  justify-content: center;
 }
 
 /*LISTA FOOTER*/
@@ -30,30 +32,101 @@
 
 .list-footer {
   ul {
-    li{
-    margin-bottom:20px;
+    margin-left: 80px;
+    padding: 0;
+    li {
+      margin-bottom: 20px;
+    }
   }
 }
+
+#list-footer__why-slack {
+  margin-left: 0px;
 }
 
 /*PIE FOOTER*/
 
 .pie-footer {
-    display: flex;
- 
-    left: 23%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 3px solid rgb(226, 226, 226);
+  padding-top: 40px;
 }
 
-.footer-legal{
-    padding-bottom: 40px;
-   
+/*PIE FOOTER IZQUIERDA*/
+
+.nav-footer__izquierda {
+  width: 66vw;
+  padding: 0px;
+  display: flex;
+  ul {
+    display: flex;
+    padding: 0px;
+    li {
+      display: flex;
+      margin-right: 20px;
+      align-items: center;
+    }
+    img {
+      margin-right: 10px;
+      height: 15px;
+    }
+  }
 }
+
+/*PIE FOOTER DERECHA*/
+
+.nav-footer__derecha {
+  ul {
+    display: flex;
+    li {
+      display: flex;
+      margin-left: 20px;
+      align-items: center;
+    }
+    a {
+      margin-left: 10px;
+    }
+    p {
+      margin-left: 10px;
+    }
+  }
+}
+
+/*FOOTER LEGAL*/
+
+.footer-legal {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+/*ICONOS FOOTER*/
 
 .privacy-icon {
-    width: 20px;
-    
+  width: 14px;
 }
 
-.cambiar-region {
-    width: 20px;
+.cambiar-region-icon {
+  width: 14px;
+}
+
+.download-slack-icon {
+  width: 14px;
+}
+
+.twitter-icon {
+  width: 14px;
+}
+
+.facebook-icon {
+  width: 14px;
+}
+
+.youtube-icon {
+  width: 14px;
+}
+
+.linkedin-icon {
+  width: 14px;
 }
