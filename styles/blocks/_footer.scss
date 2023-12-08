@@ -3,6 +3,10 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  color: black;
+  a{
+    color: black;
+  }
 }
 
 .footer-block1 {
@@ -11,11 +15,10 @@
   align-items: flex-start;
   padding-bottom: 40px;
   padding-top: 56px;
-
   justify-content: center;
 }
 
-/LISTA FOOTER/
+/*LISTA FOOTER*/
 
 .logo-footer {
   width: 60px;
@@ -44,7 +47,7 @@
   margin-left: 0px;
 }
 
-/PIE FOOTER/
+/*PIE FOOTER*/
 
 .pie-footer {
   display: flex;
@@ -54,7 +57,7 @@
   padding-top: 40px;
 }
 
-/PIE FOOTER IZQUIERDA/
+/*PIE FOOTER IZQUIERDA*/
 
 .nav-footer__izquierda {
   width: 66vw;
@@ -73,9 +76,10 @@
       height: 15px;
     }
   }
+  font-weight: 600;
 }
 
-/PIE FOOTER DERECHA/
+/*PIE FOOTER DERECHA*/
 
 .nav-footer__derecha {
   ul {
@@ -89,22 +93,24 @@
       margin-left: 10px;
     }
     p {
-      margin-left: 10px;
+      margin-left: 13px;
     }
   }
+  font-weight: 600;
 }
 
-/FOOTER LEGAL/
+/*FOOTER LEGAL*/
 
 .footer-legal {
   padding-bottom: 40px;
   padding-top: 40px;
 }
 
-/ICONOS FOOTER/
+/*ICONOS FOOTER*/
 
 .privacy-icon {
   width: 14px;
+  transform: rotate(47deg);
 }
 
 .cambiar-region-icon {
@@ -112,7 +118,7 @@
 }
 
 .download-slack-icon {
-  width: 14px;
+  width: 17px;
 }
 
 .twitter-icon {
