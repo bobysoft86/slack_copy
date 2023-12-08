@@ -4,7 +4,8 @@
   justify-content: center;
   align-content: center;
   flex-direction: row;
-  background-color: #f4ede4;
+
+  
 
   &-firstCage {
     color: white;
@@ -25,70 +26,68 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 48px;  
+    padding-top: 48px;
     padding-left: 0px;
     padding-right: 0px;
 
-        &-imagen{
-            display: flex;
-            flex-direction: row;
-            padding: 0px;
-            gap: 40px;
-           img{
-            padding: 0px;
-           }
-            &-airbnb{
-                width: 113px;
-            }
-           
-            &-nasa{
-                width: 67px;
-            }
-           
-            &-uber{
-                width: 75px;
-            }
-           
-            &-target{
-                width: 48px;
-            }
-           
-            &-NY{
-                width: 230px;
-            }
-           
-            &-etsy{
-                width: 74px;
-            }
-        }
+    &-imagen {
+      display: flex;
+      flex-direction: row;
+      padding: 0px;
+      img {
+        padding: 0px;
       }
-      
-   
-      &-section3 {
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          align-content: space-around;
-          align-items: center;
-          &-botones {
-              display: flex;
-              flex-direction: row;
-              gap: 10px;
-              justify-content: center;
-            }
-            &-porcien {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                align-content: center;
-                justify-content: center;
-                width: 38%;
-                margin-left: 50%;
-                margin-right: 50%;
-                align-items: center;
-            }
-        }
+      &-airbnb {
+        width: 113px;
+      }
+
+      &-nasa {
+        width: 67px;
+      }
+
+      &-uber {
+        width: 75px;
+      }
+
+      &-target {
+        width: 48px;
+      }
+
+      &-NY {
+        width: 230px;
+      }
+
+      &-etsy {
+        width: 74px;
+      }
     }
+  }
+
+  &-section3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+    &-botones {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+    }
+    &-porcien {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      width: 38%;
+      margin-left: 50%;
+      margin-right: 50%;
+      align-items: center;
+    }
+  }
+}
 
 section {
   display: flex;
@@ -97,11 +96,32 @@ section {
   max-width: 1024px;
   padding: 48px;
 }
-.section1{
-    background-color: #541554;
+.section1 {
+  background-color: #541554;
 }
 
-.textBox{
+.textBox {
+  display: flex;
+  margin: 2rem;
+  box-sizing: inherit;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.prueba {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Media query para ajustar el diseño en pantallas más estrechas */
+@media (max-width: 1024px) {
+  .prueba {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+  }
+  .textBox {
     display: flex;
     margin: 2rem;
     box-sizing: inherit;
@@ -109,27 +129,6 @@ section {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-}
-
-.prueba {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-  
-  /* Media query para ajustar el diseño en pantallas más estrechas */
-  @media (max-width: 1024px) {
-    .prueba {
-      grid-template-columns: 1fr; /* Cambia a una sola columna */
-    }
-    .textBox{  
-         display: flex;
-        margin: 2rem;
-        box-sizing: inherit;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        max-width: 500px;
-    }
+    max-width: 500px;
   }
+}
