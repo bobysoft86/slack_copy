@@ -11,11 +11,9 @@
   align-items: flex-start;
   padding-bottom: 40px;
   padding-top: 56px;
-
   justify-content: center;
 }
 
-/LISTA FOOTER/
 
 .logo-footer {
   width: 60px;
@@ -44,8 +42,6 @@
   margin-left: 0px;
 }
 
-/PIE FOOTER/
-
 .pie-footer {
   display: flex;
   flex-direction: row;
@@ -53,8 +49,6 @@
   border-top: 3px solid rgb(226, 226, 226);
   padding-top: 40px;
 }
-
-/PIE FOOTER IZQUIERDA/
 
 .nav-footer__izquierda {
   width: 66vw;
@@ -75,9 +69,7 @@
   }
 }
 
-/PIE FOOTER DERECHA/
-
-.nav-footer__derecha {
+ .nav-footer__derecha {
   ul {
     display: flex;
     li {
@@ -94,14 +86,10 @@
   }
 }
 
-/FOOTER LEGAL/
-
-.footer-legal {
+ .footer-legal {
   padding-bottom: 40px;
   padding-top: 40px;
 }
-
-/ICONOS FOOTER/
 
 .privacy-icon {
   width: 14px;
