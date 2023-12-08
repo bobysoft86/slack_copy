@@ -56,6 +56,10 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  color: black;
+}
+.footer a {
+  color: black;
 }
 
 .footer-block1 {
@@ -67,6 +71,7 @@
   justify-content: center;
 }
 
+/*LISTA FOOTER*/
 .logo-footer {
   width: 60px;
   height: 60px;
@@ -92,6 +97,7 @@
   margin-left: 0px;
 }
 
+/*PIE FOOTER*/
 .pie-footer {
   display: flex;
   flex-direction: row;
@@ -100,10 +106,12 @@
   padding-top: 40px;
 }
 
+/*PIE FOOTER IZQUIERDA*/
 .nav-footer__izquierda {
   width: 66vw;
   padding: 0px;
   display: flex;
+  font-weight: 600;
 }
 .nav-footer__izquierda ul {
   display: flex;
@@ -119,6 +127,10 @@
   height: 15px;
 }
 
+/*PIE FOOTER DERECHA*/
+.nav-footer__derecha {
+  font-weight: 600;
+}
 .nav-footer__derecha ul {
   display: flex;
 }
@@ -131,16 +143,19 @@
   margin-left: 10px;
 }
 .nav-footer__derecha ul p {
-  margin-left: 10px;
+  margin-left: 13px;
 }
 
+/*FOOTER LEGAL*/
 .footer-legal {
   padding-bottom: 40px;
   padding-top: 40px;
 }
 
+/*ICONOS FOOTER*/
 .privacy-icon {
   width: 14px;
+  transform: rotate(47deg);
 }
 
 .cambiar-region-icon {
@@ -148,7 +163,7 @@
 }
 
 .download-slack-icon {
-  width: 14px;
+  width: 17px;
 }
 
 .twitter-icon {
@@ -293,6 +308,63 @@ section {
     max-width: 500px;
   }
 }
+.section-churro-morado {
+  background: #4a154b;
+  border: none;
+  -webkit-clip-path: ellipse(75% 100% at center top);
+          clip-path: ellipse(75% 100% at center top);
+  height: auto;
+  min-height: 370px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-churro-morado {
+  display: flex;
+  color: white;
+  font-size: 34px;
+}
+
+.botones-churro-morado {
+  display: flex;
+}
+
+.boton-churro-morado__izquierda {
+  display: flex;
+  background-color: white;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 50px;
+  width: 220px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.boton-churro-morado__derecha {
+  display: flex;
+  background-color: #4a154b;
+  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 50px;
+  width: 370px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  color: white;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 * {
   margin: 0px;
   top: 0px;

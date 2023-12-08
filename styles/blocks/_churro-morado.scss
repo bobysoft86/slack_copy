@@ -1,0 +1,51 @@
+.section-churro-morado{
+    background: #4a154b;
+    border: none;
+    clip-path: ellipse(75% 100% at center top);
+    height: auto;
+    min-height: 370px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-churro-morado{
+    display:flex;
+    color: white;
+    font-size: 34px;
+    
+}
+
+.botones-churro-morado{
+    display:flex;
+}
+
+.boton-churro-morado__izquierda{
+    display: flex;
+    background-color: white;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 50px;
+    width: 220px;
+    align-items: center;
+    justify-content: center;
+    margin:20px
+}
+
+.boton-churro-morado__derecha{
+    display: flex;
+    background-color: #4a154b;
+    border: 2px solid rgb(255, 255, 255);border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 50px;
+    width: 370px;
+    align-items: center;
+    justify-content: center;
+    margin:20px;
+    color:white;
+}
