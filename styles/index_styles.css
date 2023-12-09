@@ -190,6 +190,7 @@
   width: 487px;
 }
 .main-video-vodafone {
+  width: 32rem;
   -webkit-clip-path: ellipse(100% 100% at center left);
           clip-path: ellipse(100% 100% at center left);
 }
@@ -208,6 +209,35 @@
   flex-wrap: nowrap;
   align-content: flex-start;
   justify-content: space-evenly;
+}
+.main-section1-firstCage-btnRegistro {
+  color: #541554;
+  background-color: #F4EDE4;
+  text-align: center;
+  height: 56px;
+  font-size: 14px;
+}
+.main-section1-firstCage-btnRegistroGoogle {
+  display: flex;
+  color: white;
+  background-color: #4D8CF5;
+  height: 56px;
+  font-size: 14px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-section1-firstCage-btnRegistroGoogle img {
+  border-radius: 10%;
+  padding: 2px;
+  width: 30px;
+  background-color: white;
+}
+.main-section1-firstCage h1 {
+  font-size: 48px;
+}
+.main-section1-firstCage p {
+  font-size: 18px;
 }
 .main-specialSection {
   background-color: #F4EDE4;
@@ -267,15 +297,26 @@
   gap: 20px;
   background-color: #F4EDE4;
 }
+.main-section5 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .main-section6 {
   display: grid;
   grid-template-columns: repeat(1fr 1fr);
-  gap: 20px;
+  padding: 0px;
 }
 .main-section6-texto {
   display: flex;
+  box-sizing: inherit;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 .main-section6-promedio {
+  padding-top: 32px;
   grid-column-end: 3;
   grid-column-start: -3;
   grid-row-start: 2;
@@ -333,7 +374,7 @@ section {
   }
   .main-section6 {
     width: 100%;
-    grid-template-columns: 1fr; /* Cambia a una sola columna */
+    display: flex;
   }
   .prueba {
     grid-template-columns: 1fr; /* Cambia a una sola columna */

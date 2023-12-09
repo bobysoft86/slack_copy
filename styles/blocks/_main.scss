@@ -8,8 +8,8 @@
   
     &-video {
       width: 487px;
-
       &-vodafone{
+        width: 32rem;
         clip-path: ellipse(100% 100% at center left);
       }
     }
@@ -30,6 +30,38 @@
           flex-wrap: nowrap;
           align-content: flex-start;
           justify-content: space-evenly;
+          
+          &-btnRegistro{
+            color: #541554;
+            background-color: #F4EDE4;
+            text-align: center;
+            height: 56px;
+            font-size: 14px;
+          }
+          &-btnRegistroGoogle{
+            display: flex;
+            color: white;
+            background-color: #4D8CF5;
+            height: 56px;
+            font-size: 14px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+              img{
+                border-radius: 10%;
+                padding: 2px;
+                width: 30px;
+                background-color: white;
+              }
+          }
+
+          h1{
+            font-size: 48px,;
+          }
+          p{
+            font-size: 18px,;
+          }
         }
 }
     
@@ -100,17 +132,28 @@
         gap: 20px;
         background-color: #F4EDE4;
         }
-
+&-section5{
+  padding-left: 0px;
+  padding-right: 0px;
+  
+}
         
        &-section6{
           display: grid;
           grid-template-columns:repeat( 1fr 1fr);
-          gap: 20px;
+         padding: 0px;
           
           &-texto{
             display: flex;
+            box-sizing: inherit;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-content: flex-start;
+            align-items: flex-start;
           }
           &-promedio{
+            padding-top: 32px;
             grid-column-end: 3;
             grid-column-start: -3;
             grid-row-start: 2;
@@ -176,7 +219,7 @@ section {
     }
     &-section6{
       width: 100%;
-      grid-template-columns: 1fr; /* Cambia a una sola columna */
+      display: flex;
     }
 
   }
