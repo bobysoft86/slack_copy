@@ -1,50 +1,45 @@
 .footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   color: black;
-  a{
+  a {
     color: black;
   }
-}
-
-.footer-block1 {
-  width: 88vw;
-  display: flex;
-  align-items: flex-start;
-  padding-bottom: 40px;
-  padding-top: 56px;
   justify-content: center;
+  align-items: center;
 }
 
 /*LISTA FOOTER*/
 
-.logo-footer {
-  width: 60px;
-  height: 60px;
-  margin-right: 120px;
-}
-
-.list-footer {
-  margin: 0;
+.list-footer-container {
+  width: 90%;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.list-footer {
+  padding: 40px;
+ #logo-footer{
+  width: 140px;
+ }
   ul {
-    margin-left: 80px;
-    padding: 0;
+    width: 16.6%;
+    h4{
+      font-size: 13px;
+    }
     li {
+      max-width: 100%;
       margin-bottom: 20px;
+      font-size: 13px;
     }
   }
 }
 
+.logo-footer {
+  height: 60px;
+}
+
 #list-footer__why-slack {
-  margin-left: 0px;
+  padding-left: 0px;
 }
 
 /*PIE FOOTER*/
@@ -55,12 +50,14 @@
   align-items: center;
   border-top: 3px solid rgb(226, 226, 226);
   padding-top: 40px;
+  width: 90%;
+  flex-wrap: wrap;
 }
 
 /*PIE FOOTER IZQUIERDA*/
 
 .nav-footer__izquierda {
-  width: 66vw;
+  width: 100%;
   padding: 0px;
   display: flex;
   ul {
@@ -70,6 +67,8 @@
       display: flex;
       margin-right: 20px;
       align-items: center;
+      font-size: 13px;
+      padding: 25px 0px;
     }
     img {
       margin-right: 10px;
@@ -82,15 +81,24 @@
 /*PIE FOOTER DERECHA*/
 
 .nav-footer__derecha {
+  margin-top: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
   ul {
+    margin: 0;
+    padding: 0;
     display: flex;
+    align-items: flex-start;
     li {
       display: flex;
-      margin-left: 20px;
+      margin-left: 0px;
       align-items: center;
+      font-size: 12px;
     }
     a {
-      margin-left: 10px;
+      margin-left: 0px;
+      align-items: baseline;
     }
     p {
       margin-left: 13px;
@@ -99,11 +107,27 @@
   font-weight: 600;
 }
 
+.nav-footer__derecha__iconos {
+  width: 100%;
+  margin-top: 30px;
+  ul {
+    display: flex;
+    padding: 0;
+    li {
+      display: flex;
+      margin-right: 15px;
+    }
+  }
+}
+
 /*FOOTER LEGAL*/
 
 .footer-legal {
+  width: 90%;
   padding-bottom: 40px;
   padding-top: 40px;
+  font-size: 12px;
+  justify-content: flex-start;
 }
 
 /*ICONOS FOOTER*/
@@ -119,6 +143,8 @@
 
 .download-slack-icon {
   width: 17px;
+  margin: 0;
+  padding: 0;
 }
 
 .twitter-icon {

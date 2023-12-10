@@ -1,7 +1,7 @@
 .section-churro-morado{
     background: #4a154b;
     border: none;
-    clip-path: ellipse(75% 100% at center top);
+    clip-path: ellipse(95% 100% at center top);
     height: auto;
     min-height: 370px;
     width: 100%;
@@ -34,7 +34,8 @@
     width: 220px;
     align-items: center;
     justify-content: center;
-    margin:20px
+    margin:20px 3px;
+    font-size: 15px;
 }
 
 .boton-churro-morado__derecha{
@@ -46,6 +47,7 @@
     width: 370px;
     align-items: center;
     justify-content: center;
-    margin:20px;
+    margin:20px 3px;
     color:white;
+    font-size: 15px;
 }

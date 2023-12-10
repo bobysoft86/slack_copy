@@ -1,0 +1,23 @@
+@media (max-width: 768px){
+    .section-churro-morado{
+        text-align: center;
+    }
+    .titulo-churro-morado{
+        margin: 70px 40px 30px 40px;
+    }
+    .botones-churro-morado{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .boton-churro-morado__izquierda{
+        width: 100%;
+        margin: 5px 40px;
+    }
+    .boton-churro-morado__derecha{
+        width: 100%;
+        margin: 5px 40px;
+        margin-bottom: 100px;
+
+    }
+}
