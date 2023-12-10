@@ -9,7 +9,7 @@ html, * {
 .header {
   background-color: #541554;
   color: white;
-  width: 100vw;
+  width: 94%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -204,7 +204,7 @@ html, * {
 }
 .main-section1 {
   width: 100%;
-  padding: 0px;
+  padding-left: 21px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -333,7 +333,7 @@ html, * {
 }
 .main-section5-botones-boton2 {
   color: #541554;
-  background-color: whi;
+  border: solid 2px #541554;
   text-align: center;
   height: 56px;
   font-size: 14px;
@@ -368,7 +368,11 @@ html, * {
   align-items: flex-start;
   width: 180%;
 }
+.main-section6-texto-subrayado {
+  color: #2B6FAA;
+}
 .main-section6-texto-subrayado:hover {
+  color: #2B6FAA;
   text-decoration: underline;
 }
 .main-section6-promedio {
@@ -383,6 +387,7 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  max-width: 1024px;
   padding: 48px;
 }
 

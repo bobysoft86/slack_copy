@@ -18,7 +18,7 @@
 
   &-section1 {
     width: 100%;
-    padding: 0px;
+    padding-left: 21px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -167,11 +167,10 @@
       }
       &-boton2{
         color: #541554;
-        background-color: whi;
+        border: solid 2px #541554;
         text-align: center;
         height: 56px;
         font-size: 14px;
-        
         width: 330px;
       }
     }
@@ -208,7 +207,12 @@
       align-items: flex-start;
       width: 180%;
       
+      &-subrayado{
+        color: #2B6FAA;
+      }
+
       &-subrayado:hover{
+        color: #2B6FAA;
         text-decoration: underline;
         }
     }
