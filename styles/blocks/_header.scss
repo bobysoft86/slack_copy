@@ -1,25 +1,26 @@
-* {
+html, * {
   margin: 0px;
   top: 0px;
   text-decoration: none;
   list-style: none;
 }
 
-
 .header {
   background-color: #541554;
   color: white;
+  width: 94%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
-  flex-wrap: nowrap;
   align-content: center;
-  align-items: stretch;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
 
-  a {
+a {
     color: white;
   }
-
+  
   &-logo {
     width: 400px;
     a {
@@ -29,13 +30,25 @@
       width: 40px;
     }
   }
-
+  
+  &-aburgerLogo{
+   
+    width:83px;
+    padding: 0px;
+    &-logo{
+      width: 20px;
+    }
+  }
+  
   &-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
+    height:0px;
+    visibility:hidden; 
+    display:none; 
+    // display: flex;  // lo que esta comentado es para que aparezcac apartir de 1024//
+    // flex-direction: row;
+    // justify-content: center;
+    // align-content: center;
+    // flex-wrap: nowrap;
   }
 
   &-nav > ul > li ul {
