@@ -52,49 +52,46 @@
 }
 
 .footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   color: black;
+  justify-content: center;
+  align-items: center;
 }
 .footer a {
   color: black;
 }
 
-.footer-block1 {
-  width: 88vw;
-  display: flex;
-  align-items: flex-start;
-  padding-bottom: 40px;
-  padding-top: 56px;
-  justify-content: center;
-}
-
 /*LISTA FOOTER*/
-.logo-footer {
-  width: 60px;
-  height: 60px;
-  margin-right: 120px;
-}
-
-.list-footer {
-  margin: 0;
+.list-footer-container {
+  width: 90%;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  padding: 40px;
+}
+.list-footer-container #logo-footer {
+  width: 140px;
+}
+.list-footer-container ul {
+  width: 16.6%;
+}
+.list-footer-container ul h4 {
+  font-size: 13px;
+}
+.list-footer-container ul li {
+  max-width: 100%;
+  margin-bottom: 20px;
+  font-size: 13px;
 }
 
-.list-footer ul {
-  margin-left: 80px;
-  padding: 0;
-}
-.list-footer ul li {
-  margin-bottom: 20px;
+.logo-footer {
+  height: 60px;
 }
 
 #list-footer__why-slack {
-  margin-left: 0px;
+  padding-left: 0px;
 }
 
 /*PIE FOOTER*/
@@ -104,11 +101,13 @@
   align-items: center;
   border-top: 3px solid rgb(226, 226, 226);
   padding-top: 40px;
+  width: 90%;
+  flex-wrap: wrap;
 }
 
 /*PIE FOOTER IZQUIERDA*/
 .nav-footer__izquierda {
-  width: 66vw;
+  width: 100%;
   padding: 0px;
   display: flex;
   font-weight: 600;
@@ -121,6 +120,8 @@
   display: flex;
   margin-right: 20px;
   align-items: center;
+  font-size: 13px;
+  padding: 25px 0px;
 }
 .nav-footer__izquierda ul img {
   margin-right: 10px;
@@ -129,27 +130,52 @@
 
 /*PIE FOOTER DERECHA*/
 .nav-footer__derecha {
+  margin-top: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
   font-weight: 600;
 }
 .nav-footer__derecha ul {
+  margin: 0;
+  padding: 0;
   display: flex;
+  align-items: flex-start;
 }
 .nav-footer__derecha ul li {
   display: flex;
-  margin-left: 20px;
+  margin-left: 0px;
   align-items: center;
+  font-size: 12px;
 }
 .nav-footer__derecha ul a {
-  margin-left: 10px;
+  margin-left: 0px;
+  align-items: baseline;
 }
 .nav-footer__derecha ul p {
   margin-left: 13px;
 }
 
+.nav-footer__derecha__iconos {
+  width: 100%;
+  margin-top: 30px;
+}
+.nav-footer__derecha__iconos ul {
+  display: flex;
+  padding: 0;
+}
+.nav-footer__derecha__iconos ul li {
+  display: flex;
+  margin-right: 15px;
+}
+
 /*FOOTER LEGAL*/
 .footer-legal {
+  width: 90%;
   padding-bottom: 40px;
   padding-top: 40px;
+  font-size: 12px;
+  justify-content: flex-start;
 }
 
 /*ICONOS FOOTER*/
@@ -164,6 +190,8 @@
 
 .download-slack-icon {
   width: 17px;
+  margin: 0;
+  padding: 0;
 }
 
 .twitter-icon {
@@ -267,7 +295,6 @@ section {
   flex-direction: row;
   flex-wrap: nowrap;
   max-width: 1024px;
-  padding: 48px;
 }
 
 .section1 {
@@ -309,8 +336,8 @@ section {
 .section-churro-morado {
   background: #4a154b;
   border: none;
-  -webkit-clip-path: ellipse(75% 100% at center top);
-          clip-path: ellipse(75% 100% at center top);
+  -webkit-clip-path: ellipse(95% 100% at center top);
+          clip-path: ellipse(95% 100% at center top);
   height: auto;
   min-height: 370px;
   width: 100%;
@@ -342,7 +369,8 @@ section {
   width: 220px;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  margin: 20px 3px;
+  font-size: 15px;
 }
 
 .boton-churro-morado__derecha {
@@ -355,14 +383,151 @@ section {
   width: 370px;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  margin: 20px 3px;
   color: white;
+  font-size: 15px;
 }
 
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.titulo-etiquetas {
+  text-align: center;
+}
+
+.bloque-etiquetas {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+  background-color: #f4ede4;
+}
+
+.titulo-etiquetas {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 25px;
+  font-size: 25px;
+}
+
+.etiquetas-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.etiqueta {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: white;
+  padding: 13px;
+  margin: 10px;
+}
+.etiqueta p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.etiqueta h2 {
+  max-height: 120px;
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+.etiqueta div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.etiqueta div h4 {
+  width: 90%;
+  color: #2856aa;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.etiqueta div .imagen-arrow {
+  width: 25px;
+  height: 25px;
+  rotate: -90deg;
+}
+
+.etiqueta-imagen {
+  width: 100%;
+  height: 160px;
+  margin-bottom: 10px;
+}
+
+.etiqueta:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px 0px rgb(148, 148, 148);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .etiquetas-container {
+    flex-wrap: wrap;
+  }
+  .etiqueta {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .section-churro-morado {
+    text-align: center;
+  }
+  .titulo-churro-morado {
+    margin: 70px 40px 30px 40px;
+  }
+  .botones-churro-morado {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .boton-churro-morado__izquierda {
+    width: 100%;
+    margin: 5px 40px;
+  }
+  .boton-churro-morado__derecha {
+    width: 100%;
+    margin: 5px 40px;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .list-footer-container {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .list-footer-container #logo-footer {
+    width: 1000px;
+    margin: 30px 0px;
+  }
+  .list-footer-container ul {
+    width: 30%;
+  }
+  .list-footer-container #lista-recursos {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .list-footer-container #lista-empresa {
+    margin-top: 20px;
+  }
+  .nav-footer__izquierda ul {
+    flex-wrap: wrap;
+  }
+}
 * {
   margin: 0px;
   top: 0px;
