@@ -9,7 +9,7 @@ html, * {
 .header {
   background-color: #541554;
   color: white;
-  width: 94%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -32,10 +32,11 @@ html, * {
 }
 .header-aburgerLogo {
   width: 83px;
+  height: 100px;
   padding: 0px;
 }
 .header-aburgerLogo-logo {
-  width: 20px;
+  width: 100px;
 }
 .header-nav {
   height: 0px;
@@ -222,7 +223,8 @@ html, * {
   flex-direction: row;
 }
 .main-video {
-  width: 49vw;
+  width: 100%;
+  height: 100%;
 }
 .main-video-vodafone {
   width: 32rem;
@@ -246,6 +248,9 @@ html, * {
   flex-wrap: nowrap;
   align-content: flex-start;
   justify-content: space-evenly;
+}
+.main-section1-firstCage p {
+  margin-bottom: 40px;
 }
 .main-section1-firstCage-btnRegistro {
   color: #541554;
@@ -286,9 +291,7 @@ html, * {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 48px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 48px 0;
 }
 .main-specialSection-imagen {
   display: flex;
@@ -335,6 +338,7 @@ html, * {
   background-color: #f4ede4;
 }
 .main-section5 {
+  background-image: url(../utils/img/fondoPorcentatges.png);
   display: flex;
   padding-left: 0px;
   padding-right: 0px;
@@ -344,19 +348,33 @@ html, * {
   justify-content: space-around;
   align-items: center;
 }
+.main-section5 h1 {
+  padding: 20px;
+  padding-top: 70px;
+  font-size: 40px;
+}
+.main-section5 p {
+  font-size: 18px;
+  padding: 20px;
+  padding-bottom: 40px;
+}
 .main-section5-botones {
   display: flex;
   flex-direction: row;
   align-items: center;
   align-content: space-between;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 10px;
 }
 .main-section5-botones-boton1 {
   color: white;
   background-color: #541554;
   text-align: center;
   height: 56px;
-  font-size: 14px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 6px;
   width: 330px;
 }
 .main-section5-botones-boton2 {
@@ -364,8 +382,11 @@ html, * {
   border: solid 2px #541554;
   text-align: center;
   height: 56px;
-  font-size: 14px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
   width: 330px;
+  border-radius: 6px;
 }
 .main-section5-porcien {
   display: flex;
@@ -380,24 +401,49 @@ html, * {
 .main-section5-porcien h1 {
   font-size: 48px;
   color: #541554;
+  padding-bottom: 5px;
 }
 .main-section6 {
   display: grid;
   grid-template-columns: repeat(1fr 1fr);
   padding: 0px;
 }
+.main-section6 div {
+  margin-left: 20px;
+}
+.main-section6-promedio-leyenda {
+  text-align: center;
+}
 .main-section6-texto {
   display: flex;
   box-sizing: content-box;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-content: flex-start;
   align-items: flex-start;
   width: 180%;
 }
+.main-section6-texto h3 {
+  font-style: italic;
+  font-weight: 1;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
 .main-section6-texto-subrayado {
+  display: flex;
+  margin-top: 30px;
   color: #2B6FAA;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.main-section6-texto-subrayado-arrow {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  rotate: 270deg;
 }
 .main-section6-texto-subrayado:hover {
   color: #2B6FAA;
@@ -431,6 +477,9 @@ section {
   justify-content: space-evenly;
   align-items: flex-start;
 }
+.textBox a {
+  color: #2f5ca9;
+}
 
 .prueba {
   display: grid;
@@ -445,7 +494,6 @@ section {
     background-color: #541554;
     color: white;
     width: 97%;
-    border: solid;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -490,6 +538,10 @@ section {
   font-size: 12px;
   color: black;
   width: 150px;
+}
+.letterporcien p {
+  width: 150px;
+  padding-top: 0;
 }
 
 .youtubeBlue {
@@ -644,14 +696,6 @@ a {
 }
 
 @media (max-width: 768px) {
-  .etiquetas-container {
-    flex-wrap: wrap;
-  }
-  .etiqueta {
-    width: 40%;
-  }
-}
-@media (max-width: 768px) {
   .section-churro-morado {
     text-align: center;
   }
@@ -672,14 +716,18 @@ a {
     margin: 5px 40px;
     margin-bottom: 100px;
   }
-}
-@media (max-width: 768px) {
+  .etiquetas-container {
+    flex-wrap: wrap;
+  }
+  .etiqueta {
+    width: 40%;
+  }
   .list-footer-container {
     padding: 0;
     flex-wrap: wrap;
   }
   .list-footer-container #logo-footer {
-    width: 1000px;
+    width: 706px;
     margin: 30px 0px;
   }
   .list-footer-container ul {
@@ -695,6 +743,58 @@ a {
   .nav-footer__izquierda ul {
     flex-wrap: wrap;
   }
+  .main-section6 {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .main-section6-texto {
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 90%;
+  }
+  .main-section6-texto h3 {
+    font-size: 30px;
+  }
+  .main-section6-texto-subrayado {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 0;
+    color: #2B6FAA;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .main-section6-texto-subrayado-arrow {
+    margin-top: 25px;
+    margin-left: 15px;
+    height: 30px;
+    width: 30px;
+  }
+  .main-section6-promedio-leyenda {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .main-section5-porcien div {
+    width: 33%;
+  }
+  .letterporcien {
+    width: 100%;
+  }
+  .letterporcien p {
+    padding: 0;
+    width: 130px;
+  }
+  .pFisrtmainOut {
+    visibility: hidden;
+  }
 }
 html, * {
   margin: 0px;
@@ -706,7 +806,7 @@ html, * {
 .header {
   background-color: #541554;
   color: white;
-  width: 94%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -729,10 +829,11 @@ html, * {
 }
 .header-aburgerLogo {
   width: 83px;
+  height: 100px;
   padding: 0px;
 }
 .header-aburgerLogo-logo {
-  width: 20px;
+  width: 100px;
 }
 .header-nav {
   height: 0px;

@@ -1,0 +1,123 @@
+@media (max-width: 768px){
+    .section-churro-morado{
+        text-align: center;
+    }
+    .titulo-churro-morado{
+        margin: 70px 40px 30px 40px;
+    }
+    .botones-churro-morado{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .boton-churro-morado__izquierda{
+        width: 100%;
+        margin: 5px 40px;
+    }
+    .boton-churro-morado__derecha{
+        width: 100%;
+        margin: 5px 40px;
+        margin-bottom: 100px;
+
+    }
+
+    .etiquetas-container {
+        flex-wrap: wrap;
+      }
+      .etiqueta {
+        width: 40%;
+      }
+      .list-footer-container{
+        padding: 0;
+        flex-wrap: wrap;
+        #logo-footer{
+            width: 706px;
+            margin: 30px 0px;
+        }
+
+        ul{
+            width: 30%;
+        }
+
+        #lista-recursos{
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        #lista-empresa{
+            margin-top: 20px;
+        }
+    }
+
+    .nav-footer__izquierda ul {
+        flex-wrap: wrap;
+    }
+    .main{
+    
+    
+    
+       &-section6{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+    
+            &-texto{
+                margin-top:50px;
+                margin-left:30px;
+                width: 90%;
+                h3{
+                    font-size: 30px;
+                }
+                &-subrayado{
+                    display: flex;
+                    margin-top: 5px;
+                    margin-left:0;
+                    color: #2B6FAA;
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                    &-arrow{
+                        margin-top:25px;
+                        margin-left:15px;
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+            }
+            &-promedio{
+                &-leyenda{
+                    font-size: 13px;
+                    text-align: center;
+                    margin-bottom: 25px;
+                    padding-left:15px;
+                    padding-right: 15px;
+                }
+            }
+       }
+
+       &-section5{
+         &-porcien{
+                div{
+                    width: 33%;
+            }
+        }
+       }
+    }
+    .letterporcien{
+        width: 100%;
+    
+        p{
+            padding:0;
+            width: 130px;
+        }
+    }
+    
+    .pFisrtmainOut{
+    visibility: hidden;}
+
+}
